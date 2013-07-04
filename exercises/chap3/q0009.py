@@ -1,11 +1,18 @@
 #!/usr/bin/python
 
 def is_prime(n):
-
-    #place your implementation here
-    pass
+    ''' give n is prime or not. '''
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
 
 def prime(n):
-
-    #place your implementation here
-    pass
+    ''' make list of n primes '''
+    xs = []
+    i = 2
+    while len(xs) < n:
+        if is_prime(i):
+            xs.append(i)
+        i += 1
+    return xs
