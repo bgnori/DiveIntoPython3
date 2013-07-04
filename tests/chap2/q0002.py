@@ -11,6 +11,13 @@ data = ['Fizz Buzz', 1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz',
         31, 32, 'Fizz', 34]
 
 
+Ki = 1024
+Mi = Ki*Ki
+Gi = Mi*Ki
+Ti = Gi*Ki
+
+
+
 class FizzBuzzTestCase(unittest.TestCase):
     def test_docstring(self):
         self.assertIsNotNone(q0002.fizzbuff.__doc__)
@@ -30,6 +37,18 @@ class FizzBuzzTestCase(unittest.TestCase):
 
     def test_3000000(self):
         self.assertEqual('Fizz Buzz', q0002.fizzbuff(3000000))
+
+    def test_Ki(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Ki))
+
+    def test_Mi(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Mi))
+
+    def test_Gi(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Gi))
+
+    def test_Ti(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Ti))
 
 if __name__ == '__main__':
     unittest.main()
