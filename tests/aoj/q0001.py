@@ -19,7 +19,7 @@ class TestCase(unittest.TestCase):
     def test_somedef(self):
         f = io.StringIO('foo\nbar\ndefone\nika\ntako\ndeftwo')
         xs = q0001.deffind(f)
-        self.assertEqual(['defone', 'deftwo'], xs)
+        self.assertEqual(['defone\n', 'deftwo'], xs)
 
 
 if __name__ == '__main__':
