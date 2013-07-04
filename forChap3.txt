@@ -36,5 +36,7 @@ http://diveintopython3-ja.rdy.jp/comprehensions.html
 9) prime(n)を実装せよ。n個の素数を小さい順に詰めたlistを返す関数である。
   prime(1) = [2], prime(2) = [2, 3], prime(3) = [2, 3, 5]...である
   素数を判定するis_prime(n)を先に実装せよ
-
+  
+  get_primesを実行してテスト用のデータを取得しておくこと。
+  速度に自信があるなら、1000ではなく10000とかの結果を比較してみるのもありだろう
 
