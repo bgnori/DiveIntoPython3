@@ -17,7 +17,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual([], xs)
 
     def test_somedef(self):
-        f = io.StringIO('foo\nbar\defone\nika\ntako\ndeftwo')
+        f = io.StringIO('foo\nbar\ndefone\nika\ntako\ndeftwo')
         xs = q0001.deffind(f)
         self.assertEqual(['defone', 'deftwo'], xs)
 
