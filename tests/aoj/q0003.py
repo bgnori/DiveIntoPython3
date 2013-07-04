@@ -8,9 +8,9 @@ from exercises.aoj import q0003
 
 data = """4
 1 2
-3 4 5
+3 4 5 6
 0 
-2 6 7"""
+2 7 8"""
 
 class TestCase(unittest.TestCase):
     def test_docstring(self):
