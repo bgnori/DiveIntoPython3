@@ -39,16 +39,16 @@ class FizzBuzzTestCase(unittest.TestCase):
         self.assertEqual('Fizz Buzz', q0002.fizzbuff(3000000))
 
     def test_3K(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3K))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*K))
 
     def test_3M(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3M))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*M))
 
     def test_3G(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3G))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*G))
 
     def test_3T(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3T))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*T))
 
 if __name__ == '__main__':
     unittest.main()
