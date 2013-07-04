@@ -22,6 +22,18 @@ class NumberingTestCase(unittest.TestCase):
         for i in range(1000):
             self.assertEqual((i, i), k[i])
 
+    def test_no_sideeffect(self):
+        xs = list(range(10))
+        ys = list(range(10))
+        k = q0005.numbering(xs)
+
+        self.assertEqual(xs, ys)
+        for i in range(10):
+            self.assertEqual((i, i), k[i])
+
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
