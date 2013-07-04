@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 
+import io
 import unittest
 
 from exercises.aoj import q0002
