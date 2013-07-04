@@ -3,24 +3,17 @@ Dive Into Python3 の章立てに沿った問題と問題への回答を検証�
 
 ## 環境設定の仕方
 
-使いたいpythonをインストール済みであること.
+python3.3をインストール済みであること.
 
-まずvirtualenvをインストールしよう. 配布サイト https://pypi.python.org/pypi/virtualenv を参照.
+次にsetup.shを用いて
 
-次にこのgit repositoryをcloneし、その中でvirtualenvを実行します.
-具体的にはpython3.3で行う場合は
+    % ./setup.sh
 
-    % virtualenv --clear --no-site-packages --python=python3.3 py3.3 
-
-などとする.
-
-    % source py3.3/bin.activate
-
-でenvを有効にする.
+とするとpackaging toolであるdistributeとpipがインストールされる.
 
 次にpipを使って依存しているpackageを入れる
 
-    % pip install -r freeze.txt
+    % ./py3.3/bin/pip install -r freeze.txt
 
 これでcheck.pyに必要なものがインストールされる。
 
