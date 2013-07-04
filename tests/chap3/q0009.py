@@ -13,7 +13,7 @@ class TestCase(unittest.TestCase):
         with open("a000040.txt") as f:
             for line in f:
                 idx, prime = line.split()
-                primes.append(prime)
+                primes.append(int(prime))
         cls.primes = primes
 
     def test_docstring(self):
