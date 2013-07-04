@@ -13,12 +13,12 @@ class TestCase(unittest.TestCase):
 
     def test_nodef(self):
         f = io.StringIO('foo\nbar\nika\ntako')
-        xs = q0001.deffind()
+        xs = q0001.deffind(f)
         self.assertEqual([], xs)
 
     def test_somedef(self):
         f = io.StringIO('foo\nbar\defone\nika\ntako\ndeftwo')
-        xs = q0001.deffind()
+        xs = q0001.deffind(f)
         self.assertEqual(['defone', 'deftwo'], xs)
 
 
