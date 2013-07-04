@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-def fizzbuff(n):
+def fizzbuzz(n):
 
     #place your implementation here
     pass

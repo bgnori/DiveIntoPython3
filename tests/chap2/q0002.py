@@ -20,35 +20,35 @@ T = G*K
 
 class FizzBuzzTestCase(unittest.TestCase):
     def test_docstring(self):
-        self.assertIsNotNone(q0002.fizzbuff.__doc__)
+        self.assertIsNotNone(q0002.fizzbuzz.__doc__)
 
     def test_by_data(self):
         for i, expected in enumerate(data):
-            self.assertEqual(expected, q0002.fizzbuff(i))
+            self.assertEqual(expected, q0002.fizzbuzz(i))
 
     def test_1000(self):
-        self.assertEqual('Buzz', q0002.fizzbuff(1000))
+        self.assertEqual('Buzz', q0002.fizzbuzz(1000))
 
     def test_1000000(self):
-        self.assertEqual('Buzz', q0002.fizzbuff(1000000))
+        self.assertEqual('Buzz', q0002.fizzbuzz(1000000))
 
     def test_3000003(self):
-        self.assertEqual('Fizz', q0002.fizzbuff(3000003))
+        self.assertEqual('Fizz', q0002.fizzbuzz(3000003))
 
     def test_3000000(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3000000))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuzz(3000000))
 
     def test_3K(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*K))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuzz(3*K))
 
     def test_3M(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*M))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuzz(3*M))
 
     def test_3G(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*G))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuzz(3*G))
 
     def test_3T(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(3*T))
+        self.assertEqual('Fizz Buzz', q0002.fizzbuzz(3*T))
 
 if __name__ == '__main__':
     unittest.main()
