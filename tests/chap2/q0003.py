@@ -15,7 +15,7 @@ class TestCase(unittest.TestCase):
         self.assertIsNotNone(q0003.fizzbuzz_t.__doc__)
 
     def test_0(self):
-        self.assertEqual(tuple(data[0]), q0003.fizzbuzz_t(0))
+        self.assertEqual(tuple(data[:0]), q0003.fizzbuzz_t(0))
 
     def test_15(self):
         self.assertEqual(tuple(data[:15]), q0003.fizzbuzz_t(15))
