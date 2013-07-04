@@ -28,7 +28,7 @@ http://diveintopython3-ja.rdy.jp/comprehensions.html
   circular(3) => {0: 1, 1: 2, 2: 0}
   circular(4) => {0: 1, 1: 2, 2: 3, 3: 0}
 
-8) 7)では整数値だったが、代わりにa-zを用いよ。period < 26を仮定してよい.
+8) 7)では整数値だったが、代わりにa-zを用いよ。period <= 26を仮定してよい.
   circular(1) => {'a': 'a'}
   circular(2) => {'a': 'b', 'b': 'a'}
 
