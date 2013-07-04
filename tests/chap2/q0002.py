@@ -11,10 +11,10 @@ data = ['Fizz Buzz', 1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz',
         31, 32, 'Fizz', 34]
 
 
-Ki = 1024
-Mi = Ki*Ki
-Gi = Mi*Ki
-Ti = Gi*Ki
+K = 1000
+M = K*K
+G = M*K
+T = G*K
 
 
 
@@ -38,17 +38,17 @@ class FizzBuzzTestCase(unittest.TestCase):
     def test_3000000(self):
         self.assertEqual('Fizz Buzz', q0002.fizzbuff(3000000))
 
-    def test_Ki(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Ki))
+    def test_K(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(K))
 
-    def test_Mi(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Mi))
+    def test_M(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(M))
 
-    def test_Gi(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Gi))
+    def test_G(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(G))
 
-    def test_Ti(self):
-        self.assertEqual('Fizz Buzz', q0002.fizzbuff(Ti))
+    def test_T(self):
+        self.assertEqual('Fizz Buzz', q0002.fizzbuff(T))
 
 if __name__ == '__main__':
     unittest.main()
