@@ -1,35 +1,38 @@
-
 Dive Into Python3 の章立てに沿った問題と問題への回答を検証するためのunittest
 
-## 一式を用意する
+## 必要な物意する
 
-0 githubでforkする
+#### githubでforkする
 
-1 forkしたものを適当な場所にcloneする
+#### forkしたものを適当な場所にcloneする
 
 
 ## 環境設定の仕方
 
-0 python3.3をインストール済みであること.
+#### python3.3をインストール済みであること.
 
-1 setup.shを用いて
+#### setup.shを用いて
 
     % ./setup.sh
 
 とするとpyvenvで仮想環境が作られ、その環境の中に
 packaging toolであるdistributeとpipがインストールされる.
 
-2 仮想環境を起動する
+#### 仮想環境を起動する
 
     % source py3.3/bin/activate
 
 起動するとprompが変わる。
 
-3 にpipを使って依存しているpackageを入れる
+#### 仮想環境にpipを使って依存しているpackageを入れる
 
-    (py3.3) pip install -r freeze.txt
+    (py3.3) % pip install -r freeze.txt
 
 これでcheck.pyに必要なものがインストールされる。
+
+#### 仮想環境を終了する
+
+    (py3.3) % deactivate
 
 ## check.pyの使い方
 
@@ -54,5 +57,3 @@ testの実装が間違っていると思われる場合はissueをたててく�
 
 
 Enjoy!
-
-
