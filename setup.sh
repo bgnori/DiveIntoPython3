@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DISTRIBUTE_VER=0.6.48
+DISTRIBUTE_VER=0.6.49
 
 ./pyvenv-3.3.py py3.3
 curl -L -O "https://pypi.python.org/packages/source/d/distribute/distribute-${DISTRIBUTE_VER}.tar.gz"
