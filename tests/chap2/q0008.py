@@ -24,8 +24,8 @@ class TestCase(unittest.TestCase):
 
     def test_various_types(self):
         self.assertEqual(
-            [1, 'a', True, {}, (), set([1, 2])],
-            q0008.flatten([[1, 'a'], [[True, {}], ()], set([1, 2])]))
+            [1, 'a', True, {}, (1, 2), set([1, 2])],
+            q0008.flatten([[1, 'a'], [[True, {}], (1, 2)], set([1, 2])]))
 
     def test_200times_nested(self):
         r = [1, 2]
